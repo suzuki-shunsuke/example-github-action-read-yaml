@@ -1,0 +1,14 @@
+---
+name: 'Read YAML'
+description: 'Read YAML'
+inputs:
+  path:
+    description: 'configuration file path'
+    required: false
+    default: 'config.yaml'
+outputs:
+  json:
+    description: 'JSON string'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
