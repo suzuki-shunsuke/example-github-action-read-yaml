@@ -1,0 +1,15 @@
+---
+assume_roles:
+- working_directory: aws/
+  aws_account_id: "000000000000"
+  pr_assume_role_name: GitHubActionsTerraformPR
+  main_assume_role_name: GitHubActionsTerraformMain
+- working_directory: github/services/
+  target: github/
+  aws_account_id: "000000000000"
+  pr_assume_role_name: GitHubActionsTerraformPRGitHub 
+  main_assume_role_name: GitHubActionsTerraformMainGitHub 
+label_prefixes:
+  target: "target:"
+  migrate: "migrate:"
+  ignore: "ignore:"
